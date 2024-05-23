@@ -60,6 +60,9 @@ struct TheClouds: View {
                         .onAppear {
                             move.toggle()
                         }
+                        .onDisappear {
+                            birdsChirpingSound?.stop()
+                        }
     }
 }
 
